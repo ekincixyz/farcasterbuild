@@ -2,6 +2,22 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
+type BaseItem = {
+  name: string;
+  description: string;
+}
+
+type ItemWithUrl = BaseItem & {
+  url: string;
+}
+
+type CategoryItem = BaseItem | ItemWithUrl;
+
+type Category = {
+  name: string;
+  items: CategoryItem[];
+}
+
 export default function EcosystemMap() {
   const getImageData = (name: string) => {
     const imageMap: { [key: string]: { src: string; url: string } } = {
@@ -67,7 +83,7 @@ export default function EcosystemMap() {
     return imageMap[name] || { src: "/placeholder.svg", url: "#" }
   }
 
-  const categories = [
+  const categories: Category[] = [
     {
       name: "Clients",
       items: [
@@ -197,7 +213,12 @@ export default function EcosystemMap() {
               <ul className="space-y-2">
                 {category.items.map((item) => (
                   <li key={item.name}>
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-bold hover:underline">{item.name}</a> - {item.description}
+                    {('url' in item) ? (
+                      <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-bold hover:underline">{item.name}</a>
+                    ) : (
+                      <span className="font-bold">{item.name}</span>
+                    )} 
+                    - {item.description}
                   </li>
                 ))}
               </ul>
