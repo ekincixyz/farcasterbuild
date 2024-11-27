@@ -54,6 +54,7 @@ export default function EcosystemMap() {
       "Paragraph @paragraph": { src: "https://i.imgur.com/Mr9IG47.jpg", url: "https://warpcast.com/paragraph" },
       "indexer @indexer": { src: "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/8eaff001-cb64-4e90-f935-5e99e41ed800/rectcrop3", url: "https://warpcast.com/indexer" },
       "Ponder Surveys @survey": { src: "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7d5d37b4-8658-43e8-ad5f-450b34fd4e00/original", url: "https://warpcast.com/survey" },
+      "Modbot": { src: "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9cf8d03e-c4ea-421b-1087-94011330d400/original", url: "https://modbot.sh/" },
 
       // Dev Tools section
       "Neynar": { src: "https://i.imgur.com/UjBZ3pV.png", url: "https://neynar.com/" },
@@ -62,6 +63,7 @@ export default function EcosystemMap() {
       "Dynamic": { src: "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/991a2933-c112-4e8b-0f8a-3b6d185e3000/original", url: "https://www.dynamic.xyz/" },
       "Privy": { src: "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/39cff029-74e3-4b5b-77ed-0afc9b031f00/original", url: "https://privy.io/" },
       "dTech": { src: "https://dtech.vision/dTechLogoWhite.png", url: "https://dtech.vision/" },
+ 
       // Analytics section
       "Ponder": { src: "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/cabe6808-f469-42b9-6941-511d8abd3000/rectcrop3", url: "https://www.weponder.io/" },
       "Casterscan": { src: "https://i.imgur.com/PD1XTs5.jpg", url: "https://casterscan.com/" },
