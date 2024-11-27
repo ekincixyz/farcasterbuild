@@ -1,5 +1,5 @@
-import { Component } from "@/components/ecosystem-map"
+import EcosystemMap from "@/components/ecosystem-map";
 
 export default function Page() {
-  return <Component />
+  return <EcosystemMap />
 }
